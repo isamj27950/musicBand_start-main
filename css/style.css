@@ -1,0 +1,317 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --bg-yellow :#fc0;
+    --bg-dates : #000;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF;     
+}
+h3{
+    text-align: center;
+    font-weight: 400 ;
+    font-size: medium;
+    text-transform:uppercase;
+    padding-top: 2rem;    
+}
+
+h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    word-spacing: .3rem;
+}
+
+
+/*header*/
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+header img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+header h1 {
+    font-size:large;
+    padding-top: 0.5rem;
+}
+
+header i{
+    padding-top: 0.5rem;
+}
+.menu_display {
+    /*display: block;*/
+    opacity: 1;
+    top: 50px;
+    
+}
+header nav {
+    position: fixed;
+    right: 15px;
+    top: -250px;
+    padding: 1rem;
+    background-color: #FFF;
+    /*display: none;*/
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+header nav ul li {
+    list-style: none;
+}
+/*Page1 hero*/
+.bg_hero{
+    background-image: url(../img/stage.jpg);
+    padding: 2.5rem;
+    background-size: cover;
+}
+.hero{
+   
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    max-width: 630px;
+    min-width: 270px;
+    padding: 1rem;   
+}
+.hero_text{
+    text-align: left;
+    min-width: 200px;
+    max-width: 300px;
+
+    
+}
+.hero h2{
+    text-transform: uppercase;
+}
+.hero_btn{
+    text-decoration: none;
+    font-size: small;
+    padding: 0.4rem 1rem;
+    background-color: #e8be14;
+    color: #000;
+}
+.hero_img{
+    width: 50%;    
+}
+
+
+
+/*Page des icons*/
+.icon_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+.icon_list a{
+    background-color: #000;
+    color: #FFF;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 0.8rem 1.2rem;
+}
+.icon_list i {
+    padding-right:2rem;
+    font-size: larger;
+    
+}
+/*Page des artistes*/
+
+.artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin:auto ;
+    
+    
+}
+.artist_title{
+    display: block;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.artist_title h3{
+    padding: 0;
+}
+
+/*PAGE BLOG*/
+.blog{
+    background-color:var(--bg-yellow);
+    
+}
+.blog_container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin:auto ;
+    padding-bottom: 1rem;
+}
+.blog_container_contenu{
+    width: 250px;
+    justify-content:center;
+    align-items: flex-start;
+    max-width: 60%;
+    margin: 0 auto 1rem auto;
+}
+.blog_container_contenu img{
+    max-width: 260px;
+}
+.blog_container_contenu h5{
+    text-transform: uppercase;
+}
+
+
+/*Page New Album*/
+.new_album{
+    display: block;
+    text-align:start;
+    margin: 2rem;   
+}
+.new_album h4 {
+    text-align: left;
+    padding-top: 1rem;
+}
+.new_album h3{
+    text-align: left;
+}
+
+.new_album h4 span{
+    color :#f00
+}
+
+
+/*PAGE CONCERTS*/
+.concert{
+    background-color:var(--bg-dates);
+    color: #FFF;
+}
+.concert_tour{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem;      
+}
+
+.concert_tour_date hr {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.concert_tour_date button{
+    border:none;
+    text-decoration: none;
+    font-size: small;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-yellow);
+    color:var(--bg-dates);
+    margin-top: 1rem;
+}
+/*Albums*/
+.album{
+    width: 100%;
+}
+.list_album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap:1rem;
+}
+figure{
+    position: relative;
+    width: 100%;
+} 
+figure img {
+    width: 100%;
+}
+figcaption{
+    position: absolute;
+    background-color:#e9e6e6;
+    bottom: 1rem;
+    font-weight:700;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.list_album button{
+    border: none;
+    text-decoration:none;
+    font-size: small;
+    padding: 0.5rem 1rem;
+    background-color:var(--bg-yellow);
+    color: var(--bg-dates);
+    margin-bottom: 1rem;
+}
+.list_album h5{
+    font-size: large;
+    text-transform: uppercase;
+
+} 
+
+
+/*footer*/
+footer {
+    background-color:var(--bg-yellow);
+}
+.footer_icon{
+    position: relative;
+    display:block;   
+    justify-content: center; 
+}
+.list-inline{
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around; 
+    padding:1rem;
+    margin-top:1rem ; 
+}
+.list-inline a{
+    color:var(--bg-dates);
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 0.8rem 1.2rem;
+    font-size: large;
+}
+.list-inline i {
+    font-size: x-large;
+    align-items:center;
+    
+} 
+@media(max-width:320px) {
+    .hero_img{
+        display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
