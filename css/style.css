@@ -1,16 +1,9 @@
 *, *::before, *::after {
     box-sizing: border-box;
-}
-* {
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
-}
-:root{
     --bg-yellow :#fc0;
     --bg-dates : #000;
-    
 }
 
 body {
@@ -24,8 +17,7 @@ h3{
     text-transform:uppercase;
     padding-top: 2rem;    
 }
-
-h4 {
+h4{
     text-align: center;
     font-weight: 700;
     font-size: large;
@@ -34,9 +26,7 @@ h4 {
     word-spacing: .3rem;
 }
 
-
 /*header*/
-
 header{
     position: relative;
     padding-top: 2rem;
@@ -56,7 +46,6 @@ header i{
     padding-top: 0.5rem;
 }
 .menu_display {
-    /*display: block;*/
     opacity: 1;
     top: 50px;
     
@@ -67,13 +56,13 @@ header nav {
     top: -250px;
     padding: 1rem;
     background-color: #FFF;
-    /*display: none;*/
     opacity: 0;
     transition: all 0.5s ease-out;
 }
 header nav ul li {
     list-style: none;
 }
+
 /*Page1 hero*/
 .bg_hero{
     background-image: url(../img/stage.jpg);
@@ -81,7 +70,6 @@ header nav ul li {
     background-size: cover;
 }
 .hero{
-   
     background-color: #000;
     color: #FFF;
     display: flex;
@@ -92,9 +80,7 @@ header nav ul li {
 .hero_text{
     text-align: left;
     min-width: 200px;
-    max-width: 300px;
-
-    
+    max-width: 300px;    
 }
 .hero h2{
     text-transform: uppercase;
@@ -110,8 +96,6 @@ header nav ul li {
     width: 50%;    
 }
 
-
-
 /*Page des icons*/
 .icon_list{
     display: flex;
@@ -119,7 +103,6 @@ header nav ul li {
     justify-content: space-evenly;
     padding: 1rem;
     gap: 1rem;
-
 }
 .icon_list a{
     background-color: #000;
@@ -130,19 +113,16 @@ header nav ul li {
 }
 .icon_list i {
     padding-right:2rem;
-    font-size: larger;
-    
+    font-size: larger;    
 }
-/*Page des artistes*/
 
+/*Page des artistes*/
 .artist {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin:auto ;
-    
-    
+    margin:auto ;        
 }
 .artist_title{
     display: block;
@@ -155,8 +135,7 @@ header nav ul li {
 
 /*PAGE BLOG*/
 .blog{
-    background-color:var(--bg-yellow);
-    
+    background-color:var(--bg-yellow);    
 }
 .blog_container{
     display: flex;
@@ -180,7 +159,6 @@ header nav ul li {
     text-transform: uppercase;
 }
 
-
 /*Page New Album*/
 .new_album{
     display: block;
@@ -194,11 +172,9 @@ header nav ul li {
 .new_album h3{
     text-align: left;
 }
-
 .new_album h4 span{
     color :#f00
 }
-
 
 /*PAGE CONCERTS*/
 .concert{
@@ -213,13 +189,11 @@ header nav ul li {
     gap: 2rem;
     padding: 3rem;      
 }
-
 .concert_tour_date hr {
     width: 100%;
     margin-top: 1rem;
 
 }
-
 .concert_tour_date button{
     border:none;
     text-decoration: none;
@@ -229,6 +203,7 @@ header nav ul li {
     color:var(--bg-dates);
     margin-top: 1rem;
 }
+
 /*Albums*/
 .album{
     width: 100%;
@@ -267,9 +242,7 @@ figcaption{
 .list_album h5{
     font-size: large;
     text-transform: uppercase;
-
 } 
-
 
 /*footer*/
 footer {
@@ -297,9 +270,9 @@ footer {
 }
 .list-inline i {
     font-size: x-large;
-    align-items:center;
-    
+    align-items:center;    
 } 
+
 @media(max-width:320px) {
     .hero_img{
         display:none;
